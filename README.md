@@ -30,7 +30,7 @@ Micro Tube: A micro test tube provided better results than a cuvette given its s
 
 Testing:
 
-        With the samples prepared by the biology lab team, we tested the fluorescence values the device received on different types of samples, which had been tested with a lab fluorimeter to for expected results for each sample. The team operated in a dark room for no outside exposure to light to disturb the TSL252 and light sensitive solutions.
+With the samples prepared by the biology lab team, we tested the fluorescence values the device received on different types of samples, which had been tested with a lab fluorimeter to for expected results for each sample. The team operated in a dark room for no outside exposure to light to disturb the TSL252 and light sensitive solutions.
 
 _Data Collection_
 
