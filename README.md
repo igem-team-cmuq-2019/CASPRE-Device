@@ -1,6 +1,6 @@
 _Introduction_
 
-# For more detail please visit [the official iGEM-CMU 2019 Hardware Page](https://2019.igem.org/Team:CMUQ/Hardware)
+# For more detail please visit [the official iGEM-CMUQ 2019 Hardware Page](https://2019.igem.org/Team:CMUQ/Hardware)
 
 
 With the recent developments of the Cas12a enzyme, our biology team was able to use its matching and breaking abilities to snap matching gene sequences to that of a specific genetic disease, such as: sickle cell anemia, cystic fibrosis, etc. With the aid of an identifier molecule that has a fluorescent tag, we can map these identifiers throughout the genetic sequence, such that when the Cas12a enzyme snaps on matching gene sequences, the identifier&#39;s fluorescent tag gets released. To be able to detect the level of fluorescent tags released, we have to excite the tags with 535 nm of light, and at full emission should emit back at 555 nm.
