@@ -55,6 +55,7 @@ _Data Analysis_
 
 Quite successfully, the device&#39;s light-to-voltage sensor (TSL252) revealed data trends in its values that matched our expectations. The sensor returned extremely large inverted values that ranged from 247 to 446. The fluorimeter returns values in RFU (Relative Fluorescence Unit) which is on a 0 – 5 scale, as it&#39;s analogous to the its sensors voltage levels. Since we&#39;re making use of the PWM pins on the Arduino that operates in 10 bits, our sensor was relaying values on an unsigned range of 0 – (210 – 1), which is 0 – 1023. Since the sensor already operates on a 5V logic level, we just had to normalize the values to an inverted range, done as so:
 
+RFU = 1024/raw
 
 This trend was confirmed with control tests of Nuclease Free Water, and DNase Alert.
 
