@@ -1,7 +1,7 @@
+# For more detail please visit [the official iGEM-CMUQ 2019 Hardware Page](https://2019.igem.org/Team:CMUQ/Hardware)
+
+
 _Introduction_
-
-# For more detail please visit [the official iGEM-CMU 2019 Hardware Page](https://2019.igem.org/Team:CMUQ/Hardware)
-
 
 With the recent developments of the Cas12a enzyme, our biology team was able to use its matching and breaking abilities to snap matching gene sequences to that of a specific genetic disease, such as: sickle cell anemia, cystic fibrosis, etc. With the aid of an identifier molecule that has a fluorescent tag, we can map these identifiers throughout the genetic sequence, such that when the Cas12a enzyme snaps on matching gene sequences, the identifier&#39;s fluorescent tag gets released. To be able to detect the level of fluorescent tags released, we have to excite the tags with 535 nm of light, and at full emission should emit back at 555 nm.
 
@@ -30,7 +30,7 @@ Micro Tube: A micro test tube provided better results than a cuvette given its s
 
 Testing:
 
-        With the samples prepared by the biology lab team, we tested the fluorescence values the device received on different types of samples, which had been tested with a lab fluorimeter to for expected results for each sample. The team operated in a dark room for no outside exposure to light to disturb the TSL252 and light sensitive solutions.
+With the samples prepared by the biology lab team, we tested the fluorescence values the device received on different types of samples, which had been tested with a lab fluorimeter to for expected results for each sample. The team operated in a dark room for no outside exposure to light to disturb the TSL252 and light sensitive solutions.
 
 _Data Collection_
 
@@ -53,8 +53,9 @@ Seven different samples were tested with the device. All expected fluorescence l
 
 _Data Analysis_
 
-Quite successfully, the device&#39;s light-to-voltage sensor (TSL252) revealed data trends in its values that matched our expectations. The sensor returned extremely large inverted values that ranged from 247 to 446. The fluorimeter returns values in RFU (Relative Fluorescence Unit) which is on a 0 – 5 scale, as it&#39;s analogous to the its sensors voltage levels. Since we&#39;re making use of the PWM pins on the Arduino that operates in 10 bits, our sensor was relaying values on an unsigned range of 0 – (210 – 1), which is 0 – 1023. Since the sensor already operates on a 5V logic level, we just had to normalize the values to an inverted range, done as so:
+Quite successfully, the device&#39;s light-to-voltage sensor (TSL252) revealed data trends in its values that matched our expectations. The sensor returned extremely large inverted values that ranged from 247 to 446. The fluorimeter returns values in RFU (Relative Fluorescence Unit) which is on a 0 – 5 scale, as it&#39;s analogous to the its sensors voltage levels. Since we&#39;re making use of the PWM pins on the Arduino that operates in 10 bits, our sensor was relaying values on an unsigned range of 0 – (2<sup>10</sup> – 1), which is 0 – 1023. Since the sensor already operates on a 5V logic level, we just had to normalize the values to an inverted range, done as so:
 
+RFU = 1024/raw
 
 This trend was confirmed with control tests of Nuclease Free Water, and DNase Alert.
 
