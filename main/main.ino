@@ -20,6 +20,8 @@ float normVal = 0.0;
 float trialVals[3];
 bool buttonStart = false;
 
+float threshold = 3.45;
+
 String buffer = "";
 
 void setup() {
@@ -63,7 +65,11 @@ void loop() {
     // Get average of 3 trial runs in O(1) time
     normVal = (trialVals[0] + trialVals[1] + trialVals[2])/3.0;
         
-    buffer += "On: ";
+    if (normVal > threshold)
+      buffer += "Pos: ";
+    else 
+      buffer += "Neg: ";
+      
     buffer += String(normVal, 2);
 
     BT.println("CASPRE-END");
